@@ -1,0 +1,30 @@
+<div class="search-bar-container">
+    <app-search (searchTextChanged)="onsearchTextEntered($event)"></app-search>
+</div>
+
+<section class="men-sportshoes-category">
+    <div class="container">
+        <div class="rows-boxesa" *ngFor="let product of productData">
+            <div class="products-containerr">
+                <div class="cards">
+                    <div class="product-img" [routerLink]="['/shop',product.id]">
+                        <img src="{{ product.Img }}" />
+                    </div>
+                </div>
+                <div class="lower-box">
+                    <div class="card-details">
+                        <h1 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;width: 120px;">{{ product.Name }}</h1>
+                        <i style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;width: 120px;">{{ product.Sname}}</i>
+                    </div>
+                    <div class="prise">
+                        <i class="prise-p">{{ product.Price }}</i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                          </svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

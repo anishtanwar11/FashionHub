@@ -1,0 +1,119 @@
+.about{
+    width:100%;
+    background: rgb(255, 247, 255);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px 50px 0px;
+}
+
+.image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.image img{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:376px){
+    .about{
+        padding: 50px 0px 50px 0px;
+    }
+    .image img{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:360px) {
+    .about{
+        padding: 50px 0px 50px 0px;
+    }
+    .image img{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.about-box,
+.about-box h3,
+.about-box h4{
+    
+    margin: 0;
+    padding: 0;
+}
+.about-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 10px;
+    padding: 20px 0px;
+    gap: 15px;
+}
+.about-box h3{
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+.about-box h4{
+    font-size: .9rem;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.row{
+    width: 92%;
+    padding: 20px 0px;
+}
+.card{
+    border: none;
+    
+    box-shadow: 0px 2px 10px rgb(250, 213, 250);
+    transition: all .5s ease;
+    margin-top: 10px;
+}
+.card:hover{
+    box-shadow: 0px 4px 19px plum;
+}
+.row h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.7rem;
+}
+.row p{
+    height: 100px;
+    font-size: .9rem;
+    font-family: sans-serif;
+}
+
+.row button{
+    border: .1rem solid #333333;
+    color: #fff;
+    border-radius: 25px;
+    font-size: .7rem;
+    font-weight: 600;
+    font-family: "Montserrat";
+    padding: 8px 12px;
+    background: #333333;
+    cursor: pointer;
+    transition: all .5s ease;
+    box-shadow: 5px 5px 10px gray;
+}
+.row svg{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+.row button:hover{
+    background: #fff;
+    color: #333333;
+    border: .1rem solid #fff;
+}

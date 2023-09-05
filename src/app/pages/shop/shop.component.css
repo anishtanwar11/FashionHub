@@ -1,0 +1,164 @@
+.men-sportshoes-category {
+    width: 100%;
+    background: var(--alice-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.container {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+}
+
+.products-containerr {
+    background: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-img {
+    width: 200px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.lower-box {
+    background: var(--gray);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.card-details h1 {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.card-details i {
+    margin: 0;
+    font-size: .9rem;
+    font: 500;
+    cursor: pointer;
+}
+
+.prise {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fa-heart{
+    cursor: pointer;
+}
+
+@media screen and (max-width:990px) {
+    .container  {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+}
+
+@media screen and (max-width:740px) {
+    .container  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+}
+
+@media screen and (max-width:470px) {
+    .container  {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+}
+
+@media screen and (max-width:420px) {
+    .container  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 90%;
+    }
+
+    .product-img {
+        width: 160px;
+        height: 240px;
+        display: flex;
+    }
+
+    .detail-box {
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .card-details h1 {
+        font-size: .7rem;
+        font-weight: 500;
+    }
+
+    .peise p {
+        font-size: .8rem;
+        font-weight: 600;
+    }
+
+}
+
+@media screen and (max-width:360px) {
+    .product-img {
+        width: 130px;
+        height: 160px;
+        display: flex;
+    }
+
+    .product-img img {
+        width: auto;
+        height: 130px;
+    }
+
+    .card-details h1,
+    .card-details i {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 120px;
+    }
+
+}
